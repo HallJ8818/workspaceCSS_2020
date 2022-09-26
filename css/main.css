@@ -67,6 +67,12 @@ section.intro{
     width: 60%;
 }
 
+section.intro div.preamble{
+    margin-left: -30%;
+    padding: 5% 5% 5% 20%;
+    border: hsla(0, 100%, 63%, 0.9) dashed 5px;
+}
+
 div.explanation{
     float: left;
     width: 40%;
@@ -106,4 +112,58 @@ body{
 header h1{
     font-family: Dorsa, sans-serif;
     background-image: url('../img/zengarden.gif');
+}
+
+/* Nav bar on top */
+#zen-resources{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: hsla(180, 0%, 25%, 0.9);
+}
+
+#zen-resources h3{
+    display: none;
+}
+
+#zen resources ul li{
+    display: inline-block;
+    /* width, padding, border */
+    list-style: none;
+    color: white;
+}
+
+#zen-resources a{
+    color: white;
+}
+
+/* hover, active practice */
+p:active{
+    border: hsla(0, 100%, 63%, 0.9) 5px solid;
+}
+
+h3:active~p{
+    visibility: hidden;
+}
+
+li:first-of-type{
+    color: purple;
+}
+
+p::first-letter{
+    font-size: 300%;
+    text-transform:uppercase
+}
+
+p:nth-child(3n){
+    background-color: green;
+}
+
+p:nth-child(3n+1){
+    background-color: red;
+}
+
+p:nth-child(3n+1){
+    background-color: aquamarine;
 }
